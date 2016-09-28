@@ -1,3 +1,3 @@
-#Lightweiht React Seed project
+#lightweight React Seed project
 
 Originally forked from (https://github.com/coryhouse/pluralsight-redux-starter)
