@@ -9,7 +9,7 @@ const Header = () =>{
                 <Link to="about" activeClassName="active">Learn More</Link>
             </nav>
         );
-    }
+    };
 
 
 export default Header;
