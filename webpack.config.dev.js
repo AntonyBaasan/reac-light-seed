@@ -10,6 +10,7 @@ export default {
     'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
     path.resolve(__dirname, 'src/index')
   ],
+    // web pack build target types - other options: 
   target: 'web',
   output: {
     path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
