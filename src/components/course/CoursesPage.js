@@ -3,6 +3,7 @@ import {Link} from "react-router";
 import {connect} from 'react-redux';
 import * as courseActions from '../../actions/courseActions';
 import {bindActionCreators} from 'redux';
+import CourseList from './CourseList';
 
 class CoursesPage extends React.Component{
 
@@ -19,7 +20,7 @@ class CoursesPage extends React.Component{
         return (
             <div>
                 <h1>Course</h1>
-                {this.props.courses.map(this.courseRow)}
+                <CourseList courses={this.props.courses}/>
                 </div>
         );
     }
