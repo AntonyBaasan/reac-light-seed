@@ -2,6 +2,7 @@ import React,{PropTypes} from "react";
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as courseActions from '../../actions/courseActions';
+import CourseForm from './CourseForm';
 
 class ManageCoursePage extends React.Component{
 
@@ -12,7 +13,7 @@ class ManageCoursePage extends React.Component{
 
     render(){
         return (
-            <h1>Manage course</h1>
+            <CourseForm/>
         );
     }
 }
