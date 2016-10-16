@@ -6,7 +6,7 @@ const SelectInput = ({name, label, onChange, defaultOption, options, value, erro
             <label htmlFor={name}>label</label>
             <div className="field">
                 <select name={name} value={value} onChange={onChange} className="form-control">
-                    <option value="">{defaultOption}</option>
+                    <option>{defaultOption}</option>
                     {options.map((option)=>{
                         return <option key={option.value} value={option.value}>{option.text}</option>;
                     })}
