@@ -10,7 +10,7 @@ const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
             <SelectInput name="authorId" label="Author" value={course.authorId} defaultOption="Select Author" options={allAuthors} onChange={onChange} error={errors.authorId}/> 
             <TextInput name="category" label="Category" value={course.category} onChange={onChange} error={errors.category}/>
             <TextInput name="length" label="Length" value={course.length} onChange={onChange} error={errors.length}/> 
-            <input name="submit" disabled={saving} value={saving? 'Saving...': 'Save'} className="btn btn-primary" onClick={onSave}/> 
+            <input type="submit" disabled={saving} value={saving? 'Saving...': 'Save'} className="btn btn-primary" onClick={onSave}/> 
         </form> 
    );
 };
